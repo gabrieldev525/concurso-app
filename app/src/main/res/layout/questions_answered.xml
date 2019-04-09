@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+	
+	<!-- top bar-->
+	<LinearLayout
+		android:id="@+id/questionsTopBar"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#228BB2">
+
+		<Button
+			android:id="@+id/question_answeredBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Voltar"
+			android:background="#228BB2"
+			android:textColor="#ffffff"/>
+
+	</LinearLayout>
+	
+	<ListView
+		android:id="@+id/questions_answeredListView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"/>
+    
+</LinearLayout>

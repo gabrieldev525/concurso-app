@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+	
+	<!-- top bar-->
+	<LinearLayout
+		android:id="@+id/managerTopBar"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#228BB2">
+
+		<Button
+			android:id="@+id/managerBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=""
+			android:background="@drawable/back_button"
+			android:textColor="#ffffff"/>
+
+		<Button
+			android:id="@+id/managerNew"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=""
+			android:background="@drawable/new_button"
+			android:textColor="#ffffff"/>
+		
+		<Button
+			android:id="@+id/managerUpdate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=""
+			android:background="@drawable/update_button"
+			android:textColor="#ffffff"/>
+		
+	</LinearLayout>
+	
+	<!-- sessao-->
+	
+	<TextView
+		android:id="@+id/managerQuestionSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:text="Tema"
+		android:layout_gravity="center_horizontal"
+		android:textSize="18dp"
+		android:textColor="#228BB2"/>
+	
+	<!-- all questions -->
+	<ListView
+        android:id="@+id/managerQuestionList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:clickable="true">
+    </ListView>
+	
+	
+    
+</LinearLayout>

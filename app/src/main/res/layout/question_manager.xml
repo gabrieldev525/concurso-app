@@ -1,0 +1,187 @@
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:fillViewport="true">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<!-- top bar-->
+		<LinearLayout
+			android:id="@+id/questionsTopBar"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="#228BB2">
+
+			<Button
+				android:id="@+id/question_managerBack"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Voltar"
+				android:background="#228BB2"
+				android:textColor="#ffffff"/>
+
+		</LinearLayout>
+		
+		<!--author-->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/author"/>
+		
+		<EditText
+			android:id="@+id/question_managerAuthor"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textMultiLine|textLongMessage"/>
+
+		<!--enunciado-->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/enunciado"/>
+
+		<EditText
+			android:id="@+id/question_managerEnunciado"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textMultiLine|textLongMessage"/>
+		
+		<!--add image
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Add imagem"
+			android:background="#228BB2"
+			android:textColor="#ffffff"/>-->
+
+		<!--Alternativas-->
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/alternativas"/>
+
+			<!--Alternativa 1-->
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<EditText
+					android:id="@+id/question_managerAlternativa1EditText"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="@string/alternativas"
+					android:inputType="textMultiLine|textLongMessage"/>
+
+				<CheckBox
+					android:id="@+id/question_managerAlternativa1CheckBox"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+			</LinearLayout>
+
+			<!--Alternativa 2-->
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<EditText
+					android:id="@+id/question_managerAlternativa2EditText"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="@string/alternativas"
+					android:inputType="textMultiLine|textLongMessage"/>
+
+				<CheckBox
+					android:id="@+id/question_managerAlternativa2CheckBox"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+			</LinearLayout>
+
+			<!--Alternativa 3-->
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<EditText
+					android:id="@+id/question_managerAlternativa3EditText"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="@string/alternativas"
+					android:inputType="textMultiLine|textLongMessage"/>
+
+				<CheckBox
+					android:id="@+id/question_managerAlternativa3CheckBox"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+			</LinearLayout>
+
+			<!--Alternativa 4-->
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<EditText
+					android:id="@+id/question_managerAlternativa4EditText"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="@string/alternativas"
+					android:inputType="textMultiLine|textLongMessage"/>
+
+				<CheckBox
+					android:id="@+id/question_managerAlternativa4CheckBox"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+			</LinearLayout>		
+			
+			<!--Alternativa 5-->
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<EditText
+					android:id="@+id/question_managerAlternativa5EditText"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="@string/alternativas"
+					android:inputType="textMultiLine|textLongMessage"/>
+
+				<CheckBox
+					android:id="@+id/question_managerAlternativa5CheckBox"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+			</LinearLayout>
+		</LinearLayout>
+		
+		
+		<!--ok-->
+		<Button
+			android:id="@+id/question_managerButtonOk"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Ok"
+			android:background="#228BB2"
+			android:textColor="#ffffff"
+			android:layout_marginLeft="10px"/>
+		
+		
+	</LinearLayout>
+</ScrollView>

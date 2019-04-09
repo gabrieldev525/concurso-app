@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">simuladoVestibular</string>
+    <string name="hello_world">Hello world!</string>
+	
+	<string name="enunciado">Enunciado</string>
+	<string name="author">Autor</string>
+	<string name="alternativas">Alternativas</string>
+
+</resources>

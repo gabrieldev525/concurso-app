@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+	android:background="#ffffff">
+	
+	<!-- top bar-->
+	<LinearLayout
+		android:id="@+id/questionsTopBar"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#228BB2">
+		
+		<Button
+			android:id="@+id/questionsBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Voltar"
+			android:background="#228BB2"
+			android:textColor="#ffffff"/>
+		
+		<Button
+			android:id="@+id/questionsAnswered"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Respondidas"
+			android:background="#228BB2"
+			android:textColor="#ffffff"/>
+		
+	</LinearLayout>
+	
+	<!-- enunciado -->
+	<LinearLayout
+		android:id="@+id/questionsEnunciadoContent"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:gravity="center"
+		android:orientation="vertical">
+		
+		<TextView
+			android:id="@+id/questionsAuthorText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="autor da questao"
+			android:textColor="#000000"
+			android:gravity="center_horizontal"
+			android:textSize="16dp"/>
+		
+		<TextView
+			android:id="@+id/questionsEnunciadoText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="enunciado da questao"
+			android:textColor="#000000"
+			android:gravity="center_horizontal"
+			android:textSize="16dp"/>
+		
+	</LinearLayout>
+	
+	<!-- alternativas -->
+	
+	<ListView
+        android:id="@+id/listaAlternativas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+	
+	<!-- next -->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="bottom|right">
+		
+		<Button
+			android:id="@+id/questionsButtonNext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="proximo"
+			android:background="#228BB2"
+			android:textColor="#ffffff"
+			android:layout_marginBottom="10px"
+			android:layout_marginRight="10px"/>
+		
+	</LinearLayout>
+    
+</LinearLayout>
